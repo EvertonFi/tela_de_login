@@ -10,20 +10,30 @@
     <div class="login">
         <img src="../img/user.png" width="100" height="100" alt="" class="usuario">
         <h1>Login</h1>
-        <form>
+        <form id="formulario" style="display: block;">
             <p>
                 Usuário
             </p>
-            <input type="text" name="usuario" placeholder="Insira seu nome de usuário">
+            <input type="text" id="usuario" name="usuario" placeholder="Insira seu nome de usuário">
             <p>
                 Senha
             </p>
-            <input type="password" name="senha" placeholder="Insira seu senha">
+            <input type="password" id="senha" name="senha" placeholder="Insira seu senha">
             
             <input type="submit" value="Login">
             <a href="#">Esqueceu sua senha?</a><br>
             <a href="#">Ainda não possui uma conta?</a>
         </form>
+        <div id="msg" style="display: none;">
+            <p id="texto">
+                
+            </p>
+            <br>
+            <input type="submit" onclick="voltar()" value="Voltar">
+            <a href="#">Esqueceu sua senha?</a><br>
+            <a href="#">Ainda não possui uma conta?</a>
+        </div>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>
